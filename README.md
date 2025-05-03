@@ -38,7 +38,7 @@ This repository contains all code and data needed to reproduce the main figures 
 
 ---
 
-## 1. Data Generation: `StarSampler/`
+## Step 1). Data Generation: `StarSampler/`
 
 The **StarSampler** module simulates realistic star-particle distributions for a large ensemble of galaxies:
 
@@ -54,7 +54,7 @@ The **StarSampler** module simulates realistic star-particle distributions for a
 
 ---
 
-## 2. Training the GCN: `SimpleGCN.py`
+## Step 2). Training the GCN: `SimpleGCN.py`
 
 This script implements and trains a 2-layer Graph Convolutional Network using **PyTorch Geometric**:
 
@@ -74,7 +74,7 @@ This script implements and trains a 2-layer Graph Convolutional Network using **
 
 ---
 
-## 3. Figure Generation
+## Step 3). Figure Generation
 
 All three plotting scripts assume you have `predictions.csv` and `ground_truths.csv` in `data/`.
 
@@ -142,5 +142,6 @@ pip install torch torch-geometric numpy pandas h5py scikit-learn matplotlib corn
   cd StarSampler
   python generate_stars.py --n_galaxies 80000
   ```
-- For faster data generation, consider parallelization or cluster computing.  
+- For faster data generation, consider parallelization or cluster computing.
+- The StarSampler program is empty (as in, you have to fill in the blanks). This is done so that you can fine tune the sampling process for your needs.
 - Feel free to tune hyperparameters (learning rate, batch size, network depth) in `SimpleGCN.py` to explore performance.
