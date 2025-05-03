@@ -1,6 +1,6 @@
-# ds542_StarSampler
 
-# GNN Reproduction Pipeline
+
+# Recreating Dark Matter Density Distribution Figures Using Simple 2 Layer GCN
 
 This repository contains all code and data needed to reproduce the main figures in **GNN.pdf**, which presents a graph-neural-network approach to inferring astrophysical parameters from simulated galaxy star-particle data.
 
