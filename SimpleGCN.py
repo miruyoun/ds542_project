@@ -244,8 +244,8 @@ def train():
         np.savetxt("data/ground_truths.csv", all_labels, delimiter=",",
                    header="GT1,GT2,GT3,GT4,GT5", comments='')
 
-# ----------------------------
+# ---------------------------
 # Entry point for the script
-# ----------------------------
+# ---------------------------
 if __name__ == "__main__":
     train()
